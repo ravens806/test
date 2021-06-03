@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <link rel="stylesheet" href="{% static 'css/base1.css' %}">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!--static-->
+    {% block head %}
+    {% endblock %}
+</head>
+
+<body>
+    <header>
+        <div class="hamberger_btn">
+            <input type="checkbox" name="ham" id="hamberger">
+            <label for="hamberger">
+                <span>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </span>
+            </label>
+        </div>
+        {% block header %}
+        {% endblock%}
+    </header>
+    <main>
+        <div class="div1">
+            <div class="menuall">
+                <details class="details-tag" id="detail-id">
+                    <summary class="list_item" id="practice">Practice</summary>
+                    <div class="tag-a">
+                        <a href="/login">Individual</a><br>
+                        <a href="/">Team Practice</a>
+                    </div>
+                </details>
+                <details class="details-tag" id="detail-id">
+                    <summary class="list_item" id="tactics">Tactics</summary>
+                    <div class="details-item">
+                        <div class="tag-a">
+                            <a href="{% url 'tactics'%}">Tactics</a>
+                        </div>
+                    </div>
+                </details>
+                <details class="details-tag" id="detail-id">
+                    <summary class="list_item" id="news">NEWS</summary>
+                    <div class="tag-a">
+                        <a href="/">NBA</a>
+                        <a href="/">BASKTESHOES</a>
+                    </div>
+                </details>
+                <details class="details-tag" id="detail-id">
+                    <summary class="list_item" id=mypage><a href="{% url 'mypage' user.pk %}">MyPage</a>
+                    </summary>
+                </details>
+            </div>
+
+        </div>
+        <div class="div2">
+            {% block contents %}
+            {% endblock %}
+        </div>
+        <div class="div3"></div>
+    </main>
+    <script src="{% static 'js/workout.js' %} "></script>
+</body>
+
+</html>

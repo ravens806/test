@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load static %}
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/login.css' %}">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat">
+<title>ログインページ</title>
+{% endblock %}
+<!--body-->
+{% block body %}
+<main>
+    <div class="overall">
+        <h2>St.Ravens</h2>
+    </div>
+    <ul class="tabs">
+        <li><a href="" class="active">SIGN-IN</a></li>
+        <li><a href="/signup">SIGN-UP</a></li>
+    </ul>
+    <form name="form1" method="POST" action="">
+       <div class="cp_iptxt">
+            {{ form.username }}
+            <label>NAME:</label>
+            <span class="focus_line"><i></i></span>
+        </div>
+        <div>{{ form.username.errors }}</div>
+        <div class="cp_iptxt">
+            {{ form.password }}
+            
+            <label>PASS:</label>
+            <span class="focus_line"><i></i></span>
+        </div>
+        <div>{{ form.password.errors }}</div>
+        <ul class="btn">
+            <li> <a href="javascript:form1.submit()" id="btn1"  class="active" >SIGN-IN</a></li>
+            <li><input type="submit" class="sub"></li>
+        </ul>
+        {% csrf_token %}
+    </form>    
+</main>
+{% endblock %}

@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load static %}
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/login.css' %}">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat">
+<script src="{% static 'js/login.js' %}"></script>
+<title>ユーザー登録</title>
+{% endblock %}
+<!--body-->
+{% block body %}
+<main>
+    <div class="overall">
+        <h2>welcome</h2>
+    </div>
+    <ul class="tabs">
+        <li><a href="/login">SIGN-IN</a></li>
+        <li><a href="" class="active">SIGN-UP</a></li>
+    </ul>
+    <form method="POST" action="" name="form2">
+        <div class="cp_iptxt">
+            {{ form.username }}
+            <label>NAME:</label>
+            <span class="focus_line"><i></i></span>
+        </div>
+        <div>{{ form.username.errors }}</div>
+        <div class="cp_iptxt">
+            {{ form.password1 }}
+            <label>PASS:</label>
+            <span class="focus_line"><i></i></span>
+        </div>
+        <div>{{ form.password1.errors }}</div>
+        <div class="cp_iptxt">
+            {{ form.password2 }}
+            <label>確認用:</label>
+            <span class="focus_line"><i></i></span>
+        </div>
+        <div>{{ form.password2.errors }}</div>
+        <ul class="btn">
+            <li><a href="javascript:form2.submit()" id="btn2"  class="active" >SIGN-UP</a></li>
+            <li><input type="submit" class="sub"></li>
+        </ul>
+        
+        {% csrf_token %}    
+        
+    </form>
+</main>
+{% endblock %}
