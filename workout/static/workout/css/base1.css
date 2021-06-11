@@ -112,7 +112,7 @@ input:checked+label span i:nth-child(3) {
 /*main*/
 
 main {
-    margin-top: 62px;
+    margin-top: 75px;
     display: flex;
 }
 
@@ -310,6 +310,7 @@ h1 {
 }
 
 h2 {
+    margin-top: 75px;
     /*文字のサイズ*/
     font-size: 1.75rem;
     /*文字の太さ*/
@@ -336,7 +337,7 @@ h2 {
 
 h3 {
     /*文字のサイズ*/
-    font-size: 1.25rem;
+    font-size: 1.75rem;
     /*文字の太さ*/
     font-weight: 600;
     /*文字の間隔*/
@@ -355,7 +356,7 @@ h3 {
 
 @media screen and (max-width:800px) {
     h3 {
-        font-size: 1rem;
+        font-size: 1.7rem;
     }
 }
 
@@ -367,7 +368,7 @@ h3 {
 
 @media screen and (max-width:800px) {
     .text {
-        padding: 0 24px 40px;
+        padding: 0 24px ;
     }
 }
 
