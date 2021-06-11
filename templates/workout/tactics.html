@@ -1,25 +1,68 @@
-{% extends "base1.html" %} {% load static %} {% block head %}
-<link rel="stylesheet" href="{% static 'workout/css/text.css' %}"> {% endblock %} {% block contents %}
+{% extends "base1.html" %} {% block contents %}
+<article>
+    <div>
 
-<div class="index">
-    <h1>チームディフェンス</h1>
-    <ul>
-        <li>ポジショニング</li>
-        <li>ヘルプ&リカバリー</li>
-        <li>スクリーンに対する守り方</li>
-    </ul>
-</div>
-
-<div class="substance">
-    <h2>ディフェンスのポジショニング</h2>
-    <p>ディフェンスは状況に応じて3種類のポジションをとる必要がある</p>
-    <ul>
-        <li>ボールマン</i>
-            <li>ディナイ</li>
-            <li>ヘルプ</li>
-    </ul>
-    <p></p>
-
-</div>
-
+    </div>
+    <h1>ディフェンスの基本</h1>
+    <div class="text">
+        <!--基本的な考え方を乗せる-->
+        <p>ディフェンスには3つのポジションがありボールと相手選手の位置関係によってその都度ポジションを修正する必要があります。<br> しかしどのポジションでも共通しているのは相手により難しい選択をさせるということです。 それを踏まえた上で練習しましょう。
+        </p>
+    </div>
+    <div class="mokuzi">
+        <div><span>目次</span></div>
+        <ul>
+            <li><a href="#m1">オンボールディフェンス</a></li>
+            <li><a href="#m2">ディナイ</a></li>
+            <li><a href="#m3">ヘルプ(3番)</a></li>
+        </ul>
+    </div>
+    <h2 id="m1">オンボールディフェンス</h2>
+    <div class="text">
+        <p>最も基本かつ重要なポジション<br> このポジションが好き勝手やられてしまうと他のポジションは基本的に無意味です。
+            <br> しかしオフェンスを完全に抑え込むことはほぼ不可能です。
+            <br> なのでチームの約束事などを守りドライブの方向決め、シュートチェックを厳しく行うまたは反対にドライブを警戒して離して守る。 そういった相手が得意なこと、やりたいことを制限するのがこのポジションの行わなければならないことです。<br>詳しくはこの下の動画をみて基本的なことを勉強しましょう。
+        </p>
+        <iframe src="" frameborder="1" loading="lazy" width="100%"></iframe>
+    </div>
+    <h2 id="m2">ディナイ</h2>
+    <div class="text">
+        <p>自分のマークマンとボールの距離が近い状況でとるポジションです。<br></p>
+        <ul>
+            <li>オープンディナイ(ヘルプ(2番))</li>
+            <li>クローズディナイ</li>
+        </ul>
+        <p>2種類あり状況によって使い分けます。</p>
+    </div>
+    <h3>オープンディナイ(ヘルプ(2番))</h3>
+    <div class="text">
+        <p>オンボールディフェンスのヘルプに行きやすいポジションをとる。<br> 使う状況は様々ですが、ボール保持者が一対一では守り切ることが難しい選手の場合やトラップでスティールを狙うなど。
+        </p>
+    </div>
+    <h3>クローズディナイ</h3>
+    <div class="text">
+        <p>ディナイの基本的な形でパスコースを塞ぐようにポジションをとる。<br> 自分のマークマンが相手チームのエースやシューターの場合に使う機会が多いです。
+            <br> または相手のボール回しを抑える、パスカットを狙ったディフェンスの際に使われます。
+            <br> 正直しんどいし、裏を取られて簡単なシュートを許すなどのデメリットがあるので<br>基本的にはオープンディナイ中心でいいと思います。
+        </p>
+    </div>
+    <h2 id="m3">ヘルプ(3番)</h2>
+    <div class="text">
+        <p>自分のマークマンとボールの距離が遠い時にとるポジション<br> 今のstarehe ravensで一番足りていないのはこのポジションの意識、理解です。<br> 言葉だけで説明するのは難しいのでこの下の動画を見てください。<br> また実際に練習していきましょう。
+        </p>
+        <iframe src="" frameborder="1" loading="lazy"></iframe>
+        <iframe src="" frameborder="1" loading="lazy"></iframe>
+    </div>
+    <h2>まとめ</h2>
+    <div class="text">
+        <p>最後にそれぞれのポジションで参考になるNBAの選手を独断と偏見で紹介するので暇な人は動画を見てください</p>
+    </div>
+    <div class="text">
+        <ul>
+            <li>カワイ・レナード (全部)<br><iframe src="" frameborder="1" loading="lazy"></iframe></li>
+            <li>ドレイモンド・グリーン (ヘルプ)<br><iframe src="" frameborder="1" loading="lazy"></iframe></li>
+            <li>トニー・アレン(オンボールディフェンス)<br><iframe src="" frameborder="1" loading="lazy"></iframe></li>
+        </ul>
+    </div>
+</article>
 {% endblock %}

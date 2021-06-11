@@ -7,7 +7,7 @@
 
 {% block body %}
 <div>
-    {{ user.username}}sann<br>
+    {{ user.username}}<br>
     <h1>aiueo</h1>
 </div>
 <div class="topmenu">
@@ -16,6 +16,8 @@
     <a href="{% url 'signup' %}">sign-up</a>
     {% else %}
     <a href="{% url 'logout' %}">logout</a>
-    <a href="{% url 'mypage' user.pk %}">マイページへ</a>
+    <a href="{% url 'mypage' user.pk %}">Mypage</a>
+    <a href="/workout">Workout</a>
+
     {% endif %}
 {% endblock %}
