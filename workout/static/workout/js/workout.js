@@ -12,9 +12,9 @@ $(function () {
         $(this).toggleClass('active');
 
         if ($(this).hasClass('active')) {
-            $(".menuall").addClass('active');
+            $(".div1").addClass('active');
         } else {
-            $(".menuall").removeClass('active');
+            $(".div1").removeClass('active');
         }
     });
 });
