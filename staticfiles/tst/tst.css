@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body {
+    line-height: 1;
+    display: block;
+}
+
+.container {
+    overflow: hidden;
+    display: block;
+}
+
+header {
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 22px;
+}
+
+.nav1 div {
+    align-items: center;
+    padding: 22px;
+}
+
+img {
+    /*アスペクト比*/
+    aspect-ratio: 1/1;
+}
+
+article {
+    /*横幅*/
+    max-width: 800px;
+    /*横の中央に配置*/
+    margin: 0 auto;
+}
+
+a {
+    /*下の青い線を消す*/
+    text-decoration: none;
+}
+
+h1 {
+    /*文字のサイズ*/
+    font-size: 1.75rem;
+    /*文字の太さ*/
+    font-weight: 600;
+    /*文字の間隔*/
+    letter-spacing: .05rem;
+    /*行間*/
+    line-height: 1.6;
+    /*文字周りの余白*/
+    padding: 0.3em;
+    /*文字色*/
+    color: #494949;
+    /*背景色*/
+    background: #fffaf4;
+    /*左線（実線 太さ 色）*/
+    border-left: solid 8px #ffaf58;
+}
+
+@media screen and (max-width:800px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+h2 {
+    /*文字のサイズ*/
+    font-size: 1.75rem;
+    /*文字の太さ*/
+    font-weight: 600;
+    /*文字の間隔*/
+    letter-spacing: .05rem;
+    /*行間*/
+    line-height: 1.6;
+    /*文字周りの余白*/
+    padding: 0.3em;
+    /*文字色*/
+    color: #494949;
+    /*背景色*/
+    background: #fffaf4;
+    /*左線（実線 太さ 色）*/
+    border-left: solid 8px #ffaf58;
+}
+
+@media screen and (max-width:800px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+h3 {
+    /*文字のサイズ*/
+    font-size: 1.25rem;
+    /*文字の太さ*/
+    font-weight: 600;
+    /*文字の間隔*/
+    letter-spacing: .05rem;
+    /*行間*/
+    line-height: 1.6;
+    /*文字周りの余白*/
+    padding: 0.3em;
+    /*文字色*/
+    color: #494949;
+    /*背景色*/
+    background: #fffaf4;
+    /*左線（実線 太さ 色）*/
+    border-left: solid 8px #ffaf58;
+}
+
+@media screen and (max-width:800px) {
+    h3 {
+        font-size: 1rem;
+    }
+}
+
+.text {
+    padding: 0 64px 40px;
+    /*テキストの折り返しの設定 変な場所で折り返ししないよう設定*/
+    line-break: strict;
+}
+
+@media screen and (max-width:800px) {
+    .text {
+        padding: 0 24px 40px;
+    }
+}
+
+.text p {
+    /*行間*/
+    line-height: 1.9;
+    margin: 16px 0;
+    /* よくわからん
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    */
+}
+
+.mokuzi {
+    padding: 32px;
+    line-height: 1.8;
+    margin: 24px 0;
+    font-size: .9375rem;
+}
+
+@media screen and (max-width:800px) {
+    .mokuzi {
+        padding: 24px;
+    }
+}
+
+.mokuzi span {
+    /*要素の位置*/
+    position: relative;
+    /*細い線を引く*/
+    border-bottom: 2px #dadad9 solid;
+    color: #9b9996;
+    /*文字の太さ*/
+    font-weight: 600;
+    display: block;
+    padding: 0 16px 8px;
+    /*下方向の距離*/
+    margin-bottom: 24px;
+    /*中央ぞろえ*/
+    text-align: center;
+    font-size: .9375rem
+}
+
+ul {
+    margin: 16px 0;
+    list-style: none;
+    display: block;
+}
+
+li {
+    margin: 4px 0;
+    padding-left: 24px;
+    line-height: 1.8;
+}
+
+li::before {
+    content: '・';
+    padding-right: 5px;
+}

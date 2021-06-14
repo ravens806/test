@@ -303,12 +303,6 @@ h1 {
     border-left: solid 8px #ffaf58;
 }
 
-@media screen and (max-width:800px) {
-    h1 {
-        font-size: 1.5rem;
-    }
-}
-
 h2 {
     margin-top: 75px;
     /*文字のサイズ*/
@@ -327,12 +321,6 @@ h2 {
     background: #fffaf4;
     /*左線（実線 太さ 色）*/
     border-left: solid 8px #ffaf58;
-}
-
-@media screen and (max-width:800px) {
-    h2 {
-        font-size: 1.5rem;
-    }
 }
 
 h3 {
@@ -354,22 +342,10 @@ h3 {
     border-left: solid 8px #ffaf58;
 }
 
-@media screen and (max-width:800px) {
-    h3 {
-        font-size: 1.7rem;
-    }
-}
-
 .text {
     padding: 0 64px 40px;
     /*テキストの折り返しの設定 変な場所で折り返ししないよう設定*/
     line-break: strict;
-}
-
-@media screen and (max-width:800px) {
-    .text {
-        padding: 0 24px 40px;
-    }
 }
 
 .text p {
@@ -390,12 +366,6 @@ h3 {
     line-height: 1.8;
     margin: 24px 0;
     font-size: .9375rem;
-}
-
-@media screen and (max-width:800px) {
-    .mokuzi {
-        padding: 24px;
-    }
 }
 
 .mokuzi span {
@@ -433,4 +403,22 @@ li {
 li::before {
     content: '・';
     padding-right: 5px;
+}
+
+@media screen and (max-width:375px) {
+    h1 {
+        font-size: 1rem;
+    }
+    h2 {
+        font-size: 0.8rem;
+    }
+    h3 {
+        font-size: 0.7rem;
+    }
+    .text {
+        padding: 0 24px 40px;
+    }
+    .mokuzi {
+        padding: 24px;
+    }
 }
