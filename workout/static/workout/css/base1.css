@@ -348,7 +348,7 @@ h3 {
 }
 
 .text {
-    padding: 0 64px 40px;
+    padding: 20px 0 64px 40px;
     /*テキストの折り返しの設定 変な場所で折り返ししないよう設定*/
     line-break: strict;
 }
@@ -357,7 +357,7 @@ h3 {
     /*行間*/
     color: white;
     line-height: 1.9;
-    margin: 16px 0;
+    margin: 20px 0;
     /* よくわからん
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -464,5 +464,8 @@ li::before {
     }
     span i:nth-child(3) {
         bottom: 3px;
+    }
+    .div1 {
+        margin-top: 35px;
     }
 }
